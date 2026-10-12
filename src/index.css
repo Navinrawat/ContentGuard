@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  @apply bg-slate-50 font-sans text-slate-900;
+}
+
+.editor-content h1 {
+  @apply mb-2 mt-3 text-2xl font-bold text-slate-900;
+}
+.editor-content h2 {
+  @apply mb-2 mt-4 text-xl font-semibold text-slate-900;
+}
+.editor-content h3,
+.editor-content h4 {
+  @apply mb-1 mt-3 text-base font-semibold text-slate-900;
+}
+.editor-content p {
+  @apply mb-2;
+}
+.editor-content ul {
+  @apply mb-2 list-disc pl-6;
+}
+.editor-content ol {
+  @apply mb-2 list-decimal pl-6;
+}
+.editor-content blockquote {
+  @apply mb-2 border-l-4 border-slate-300 pl-3 italic text-slate-600;
+}
+.editor-content a {
+  @apply text-indigo-600 underline;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+@keyframes flash {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
+  }
+  30% {
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.5);
+  }
+}
+.flash {
+  animation: flash 1.6s ease;
+  border-radius: 4px;
+}
