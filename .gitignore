@@ -1,0 +1,18 @@
+# Dependencies and build output
+node_modules
+dist
+*.tsbuildinfo
+
+# Local secrets (copy .env.example to .env)
+.env
+.env.*
+!.env.example
+
+# Editor / tool / OS files
+.claude
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+*.log
+*.zip
